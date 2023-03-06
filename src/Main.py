@@ -47,7 +47,7 @@ class Stone():
         if self.y < 880 and self.x < 1180 and self.x >= 20: 
             screen.fill((136,140,141), ((self.x, self.y), (SIZE, SIZE)))
 
-WaterObjects = []
+FluidObjects = []
 StoneObjects = []
 amount = 1
 
@@ -57,7 +57,7 @@ while running:
             running = False
         try:
             if pygame.mouse.get_pressed()[0]:
-                for _ in range(amount): WaterObjects.append(Water(RoundPos(event.pos[0]), RoundPos(event.pos[1])))
+                for _ in range(amount): FluidObjects.append(Water(RoundPos(event.pos[0]), RoundPos(event.pos[1])))
             if pygame.mouse.get_pressed()[2]:
                 for _ in range(amount): StoneObjects.append(Stone(RoundPos(event.pos[0]), RoundPos(event.pos[1])))
         except: 
@@ -68,6 +68,6 @@ while running:
     for stone in StoneObjects: 
         stone.update()
 
-    for water in WaterObjects: 
-        water.update()
+    for fluids in FluidObjects: 
+        fluids.update()
     pygame.display.update()
