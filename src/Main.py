@@ -3,7 +3,7 @@ import random
 
 background_colour = (234, 212, 252)
 screen = pygame.display.set_mode((1200, 900))
-pygame.display.set_caption('Fluid!')
+pygame.display.set_caption('Water Simulation')
 running = True
 SIZE = 5
 
