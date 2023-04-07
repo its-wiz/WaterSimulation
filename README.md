@@ -1,5 +1,5 @@
-# FluidSim
-Simple Python Fluid Simulator.
+# Water Simulation
+Simple Python Water Simulation.
 Use this Repo to gather a basic understanding of water simulations, although not complex it works and is very simple.
 Currently only supports water and stone placement.
 
